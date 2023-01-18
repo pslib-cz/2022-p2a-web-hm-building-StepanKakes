@@ -1,26 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    --bg-color: #FFFFFF;
+    --main-color: #EB6C27;
+}
 
 body{
-    background-color: grey;
+    background-color: var(--bg-color);
 }
+
 
 .navbar{
-    height:92px;
-    padding:0;
-    background-color: white;
-}
-
-.navbar__logo{
-    width:130px;
-    padding: 28.5px 0 20px 0;
-}
-
-.navbar_menu::after{
-    content: "X";
-    display: absolute;
+    position: relative;
     top: 0;
-    color: orange;
+    width: 100%;
+    z-index: 100;
+}
+/* HEADER*/
+header{
+    position: relative;
+    background: linear-gradient(0deg, rgba(36, 36, 36, 0.4), rgba(36, 36, 36, 0.4)),
+    url(./media/pageheader-1920w.jpg);
+    background-size:cover;
+    background-position: center;
+    height: 15em;
+    width: 100%;
+    margin: 0;
 }
 
-.navbar_menu{
+.header-h1{
+    width: 100%;
+    position: absolute;
+    bottom:1em;
+    left: 50%;
+    transform: translate(-50%);
+}
+.header-h2{
+    width: 100%;
+    position: absolute;
+    bottom:0.2em;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.header--light{
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.25em;
+    line-height: 1.7em;
+    align-items: center;
+    text-align: center;  
+    color: var(--bg-color);
+}
+
+.header--bold{
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 1.9em;
+    font-size: 30px;
+    text-align: center; 
+    color: var(--bg-color);
+}
+
+
+/* NAVBAR */
+.navbar__logo{
+    display: inline-block;
+    color: var(--white);
+    font-size: 60px;
+    margin-left: 0.6em;
+}
+.navbar-menu {
+    width: 90%;
+    position: absolute;
+    background-color: var(--main-color);
+    overflow: hidden;
+    max-height: 0;
+    
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+.navbar-menu ul a{
+    display: block;
+    text-align: left;
+    font-size: 1em;
+    padding: .8em;
+    padding-left:0;
+    color: var(--bg-color);
+    text-decoration: underline;
+
+}
+
+.navbar-menu ul li{
+    list-style-type: none;
+}
+
+
+/* HAMBURGER */
+
+
+.menu-text{
+    font-size: 0.75rem;
+    position: absolute;
+    top: 0em;
+    right: 2em;
+}
+
+.hamb{
+    cursor: pointer;
+    float: right;
+    padding: 2.5em 1.25em;
+}
+.hamb-line {
+    background: linear-gradient(90deg, #EB6C27 0%, #FFBE9A 100%);
+    display: block;
+    height:  0.5em;
+    position: relative;
+    width: 2.8em;
+}
+.hamb-line::before,
+.hamb-line::after{
+    background: linear-gradient(90deg, #EB6C27 0%, #FFBE9A 100%);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width:  100%;
+}
+
+
+.hamb-line::before{
+    top: 0.7em;
+}
+.hamb-line::after{
+    top: -0.7em;
+}
+.burger-menu {
     display: none;
+}
+
+.burger-menu:checked ~ nav{
+    max-height: fit-content;
+}
+.burger-menu:checked ~ .hamb .hamb-line {
+    background: transparent;
+}
+.burger-menu:checked ~ .hamb .hamb-line::before {
+    transform: rotate(-45deg);
+    top:0;
+}
+.burger-menu:checked ~ .hamb .hamb-line::after {
+    transform: rotate(45deg);
+    top:0;
 }

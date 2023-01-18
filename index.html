@@ -8,31 +8,42 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <img class="navbar__logo" src="./media/logo.png" alt="logo">
-        <ul class="navbar_menu">
-            <li class="nav-item">
-                <a class="nav-link" href="#section_1">DOMŮ</a>
-            </li>
+    <div class="navbar">
+            <a href="./index.html" class="navbar__logo"><img src="./media/logo.png" alt="logo" width="130px"></a>
+            <input class="burger-menu" type="checkbox" id="burger-menu"/>
+            <p class="menu-text">MENU</p>
+            <label class="hamb" for="burger-menu"><span class="hamb-line"></span></label>
+        <nav class="navbar-menu">
+            <ul>
+                <li class="nav-item">
 
-            <li class="nav-item">
-                <a class="nav-link" href="#section_2">SLUŽBY</a>
-            </li>
+                    <a class="nav-link" href="#section_1">DOMŮ</a>
+                </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="#section_3">REFERENCE</a>
-            </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section_2">SLUŽBY</a>
+                </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="#section_5">O NÁS</a>
-            </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section_3">REFERENCE</a>
+                </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="#section_5">KONTAKT</a>
-            </li>
-        </ul>
-    </nav>
-    <div class="hero"></div>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section_5">O NÁS</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#section_5">KONTAKT</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <header>
+        <h1 class="header-h1 header--bold">HM Building.cz s.r.o.</h1>
+        <h2 class="header-h2 header--light">liberecká stavební společnost</h2>
+    </header>
+
     <section class="services_article"></section>
     <div class="services_container">
         <section class="services__novostavby">
