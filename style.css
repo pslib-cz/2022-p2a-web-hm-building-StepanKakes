@@ -1,0 +1,26 @@
+
+body{
+    background-color: grey;
+}
+
+.navbar{
+    height:92px;
+    padding:0;
+    background-color: white;
+}
+
+.navbar__logo{
+    width:130px;
+    padding: 28.5px 0 20px 0;
+}
+
+.navbar_menu::after{
+    content: "X";
+    display: absolute;
+    top: 0;
+    color: orange;
+}
+
+.navbar_menu{
+    display: none;
+}
