@@ -201,8 +201,7 @@ header{
 
 }
 .services-container p{
-   margin: 0 0 1em 0;
-
+   margin: 0 0 1.125em 0;
 }
 
 .img-left{
@@ -216,5 +215,5 @@ header{
     color: var(--main-color);
     padding: 0.75em 2.5em;
     border: 1px dashed var(--main-color);
-    
+    display: inline-block;
 }
