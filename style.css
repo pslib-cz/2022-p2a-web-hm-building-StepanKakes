@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 html {
     font-family: 'Open Sans', sans-serif;
     --bg-color: #FFFFFF;
     --main-color: #EB6C27;
+}
+
+.text--orange{
+    color: var(--main-color);
 }
 
 body{
@@ -17,6 +21,8 @@ body{
     width: 100%;
     z-index: 100;
 }
+
+
 /* HEADER*/
 header{
     position: relative;
@@ -155,4 +161,60 @@ header{
 .burger-menu:checked ~ .hamb .hamb-line::after {
     transform: rotate(45deg);
     top:0;
+}
+
+/* SERVICES */
+.services-article h1{
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.services p{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.services{
+    margin: 0 21px;
+}
+
+.services-img{
+    width: 100%;    
+    height: 8.5em;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+    margin-top: 2.5em;
+
+}
+
+.services-container h1{
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 1em 0 0.6em 0;
+
+}
+.services-container p{
+   margin: 0 0 1em 0;
+
+}
+
+.img-left{
+    border-radius: 0px 0px 40px 0px;
+}
+.img-right{
+    border-radius: 0px 0px 0px 40px;
+}
+
+.services-btn{
+    color: var(--main-color);
+    padding: 0.75em 2.5em;
+    border: 1px dashed var(--main-color);
+    
 }
