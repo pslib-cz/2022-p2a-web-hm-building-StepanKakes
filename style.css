@@ -266,7 +266,6 @@ header{
 
 .references{
     margin: 0 1.5em;
-    text-align: center;
 }
 
 .references__info h1{     
@@ -279,6 +278,9 @@ header{
 
 .references img{
     width: 100%;
+}
+.reference-container{
+    text-align: center;
 }
 
 .reference-container h1{
