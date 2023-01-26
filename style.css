@@ -4,6 +4,7 @@ html {
     --bg-color: #FFFFFF;
     --main-color: #EB6C27;
     --white-color:white;
+    --text-color:#3A3A3A;
 }
 
 .text--orange{
@@ -14,6 +15,16 @@ body{
     background-color: var(--bg-color);
 }
 
+h2{
+    font-size: 22px;
+}
+
+p{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+}
 
 .navbar{
     position: relative;
@@ -26,14 +37,15 @@ body{
 
 /* HEADER*/
 header{
-    padding-top: 2em;
+    padding-top: 12em;
     position: relative;
     background: linear-gradient(0deg, rgba(36, 36, 36, 0.4), rgba(36, 36, 36, 0.4)),
     url(./media/pageheader-1920w.jpg);
     background-size:cover;
-    background-position: center;
-    height: 15em;
-    width: 100%;
+    background-position: center;    
+    background-repeat: no-repeat;
+    height: 10em;
+    width: 100%;    
 }
 
 .header-h1{
@@ -43,19 +55,14 @@ header{
     left: 50%;
     transform: translate(-50%);
 }
-.header-h2{
-    width: 100%;
-    position: absolute;
-    bottom:0.2em;
-    left: 50%;
-    transform: translate(-50%);
-}
 
-.header--light{
+
+
+h2 .podnadpis{
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 300;
-    font-size: 1.25em;
+    font-size: 20px;
     line-height: 1.7em;
     align-items: center;
     text-align: center;  
@@ -73,6 +80,13 @@ header{
 
 
 /* NAVBAR */
+.navbar{
+    position: absolute;
+    top: 0;
+    height: 5em;
+}
+
+
 .navbar__logo{
     display: inline-block;
     color: var(--white-color);
@@ -165,15 +179,17 @@ header{
 }
 
 /* SERVICES */
-.services-article p{
-    font-family: 'Open Sans', sans-serif;
+
+.services .services-article__heading{
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
+    color: var(--text-color);
 }
 
-.services p{
-    font-family: 'Inter', sans-serif;
+.services-article p{
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -193,7 +209,7 @@ header{
 
 }
 
-.services-container h1{
+.services-container h2{
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -244,7 +260,7 @@ header{
     margin: 0 1em;
 }
 
-.thrust-hero h1{
+.thrust-hero h2{
     align-self: center;
     font-family: 'Inter';
     font-style: normal;
@@ -269,13 +285,8 @@ header{
     margin: 0 1.5em;
 }
 
-.references__info h1{     
-    font-size: 22px;
-}
 
-.references__info p{ 
-    font-size: 14px;
-}
+
 
 .references img{
     width: 100%;
@@ -284,8 +295,7 @@ header{
     text-align: center;
 }
 
-.reference-container h1{
-    font-size: 22px;
+.reference-container h2{
     margin: 0.6em 0 0 0;
 }
 
@@ -303,17 +313,14 @@ footer{
     background-color: var(--main-color);
 }
 
-footer h1, footer p{
+footer h2, footer p{
     width: 100%;
     color: var(--white-color);
 }
-footer h1{
+footer h2{
     font-size: 22px;
 }
 
-footer p{
-    font-size: 14px;
-}
 
 .footer-btn{
     font-family: 'Inter';
