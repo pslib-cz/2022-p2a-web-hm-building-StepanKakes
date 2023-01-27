@@ -7,16 +7,33 @@ html {
 }
 
 
-.sluzby-info{
+.info-section{
     margin: 0  1.5em 4em;
 }
 
-.sluzby-info ul{
+.info-section ul{
     padding-left: 0;
     margin: 0 1.5em;
 }
 
-.sluzby-info li::marker{
+.info-section li::marker{
     color: var(--main-color);
     font-size: 1.5em;
 }   
+
+.contact-list{
+    list-style-type: none;
+}
+
+
+
+
+.contact-list li{
+    font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 19px;
+color: var(--main-color);
+    margin-top: 2em;
+}
