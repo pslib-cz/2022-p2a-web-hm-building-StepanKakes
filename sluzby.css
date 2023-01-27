@@ -7,8 +7,8 @@ html {
 }
 
 
-.content-wrapper{
-    margin: 0 1.5em;
+.sluzby-info{
+    margin: 0  1.5em 4em;
 }
 
 .sluzby-info ul{
@@ -19,4 +19,4 @@ html {
 .sluzby-info li::marker{
     color: var(--main-color);
     font-size: 1.5em;
-}
+}   
