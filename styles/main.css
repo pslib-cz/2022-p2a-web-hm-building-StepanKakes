@@ -19,6 +19,15 @@ h2{
     font-size: 22px;
 }
 
+.header-h1{
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    text-align: center; 
+    color: var(--bg-color);
+}
+
 h3{
     font-family: 'Inter';
     font-style: normal;
@@ -55,6 +64,11 @@ p{
     border: 1px dashed var(--main-color);
 }   
 
+.btn--center{
+    margin: auto;
+    display: inline-block;
+}
+
 
 
 
@@ -62,7 +76,7 @@ p{
 header{
     position: relative;
     background: linear-gradient(0deg, rgba(36, 36, 36, 0.4), rgba(36, 36, 36, 0.4)),
-    url(./media/pageheader-1920w.jpg);
+    url(../media/pageheader-1920w.jpg);
     background-size:cover;
     background-position: center;    
     background-repeat: no-repeat;
@@ -80,7 +94,8 @@ header{
 
 
 
-h2 .podnadpis{
+
+h1 .podnadpis{
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -91,14 +106,6 @@ h2 .podnadpis{
     color: var(--bg-color);
 }
 
-.header--bold{
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: 1.9em;
-    font-size: 30px;
-    text-align: center; 
-    color: var(--bg-color);
-}
 
 
 /* NAVBAR */
@@ -220,7 +227,7 @@ h2 .podnadpis{
 }
 
 .services{
-    margin: 0 1.5em;
+    margin: 4em 1.5em 0;
 }
 
 .service__img{
@@ -251,9 +258,11 @@ h2 .podnadpis{
 
 .img-left{
     border-radius: 0px 0px 40px 0px;
+    grid-area: "left";
 }
 .img-right{
     border-radius: 0px 0px 0px 40px;
+    grid-area: "right";
 }
 
 
@@ -261,7 +270,7 @@ h2 .podnadpis{
 
 .thrust-hero{
     height: 12em;
-    background:linear-gradient(180deg, rgba(61, 61, 61, 0.7) 100%, rgba(61, 61, 61, 0.7) 100%), url(./media/background-CTAblock-4460w.jpg);
+    background:linear-gradient(180deg, rgba(61, 61, 61, 0.7) 100%, rgba(61, 61, 61, 0.7) 100%), url(../media/background-CTAblock-4460w.jpg);
     background-size: 200%;
     width: 100%;
     background-position: center;
@@ -297,7 +306,7 @@ h2 .podnadpis{
 
 
 
-.references img{
+.reference-container__img{
     width: 100%;
 }
 .reference-container{
@@ -340,3 +349,121 @@ footer h2{
     display: inline-block;
     padding: 1.25em 3em;
 }
+
+
+@media only screen and (min-width:961px){
+    /*header*/
+    header{
+        height: 90vh;
+    }
+
+    .services{
+        margin: 9em 1.5em 0;
+    }
+
+    .header-h1 .podnadpis{
+        font-size: 60px;        
+    }
+
+    .header-h1{
+       font-size: 120px;
+       bottom:0;
+    }
+/*services*/
+    h2, .services .services-article__heading{
+        font-size:60px;
+    }
+    .services-article {
+        text-align: center;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .services-article p{
+        font-size: 20px;
+    }
+    .services{
+        margin: 4em 12.5em 12em;
+    }
+
+    .service__content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6em;
+    }
+
+    .service__content__info{
+        align-self: center;
+    }
+
+    .img-left{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .img-right{
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .service__img{
+        height: 300px;
+    }
+
+    .thrust-hero{
+        padding: 0 12em;
+        height: 25em;
+        width: auto;
+    
+    }
+
+/* references*/
+
+    .references h2{
+        text-align: center;
+    }
+
+    .references p{ 
+        font-size: 16px;
+        text-align: center;
+    }
+    .references__info{
+        margin: 0 25em 5em;
+    }
+
+    .reference-container__img{
+        width: 25em;
+    }
+
+    .reference-container h2{
+       font-size: 25px;
+    }
+
+    .reference-flex-wrapper{
+        display: flex;
+        justify-content: center;
+        gap: 5em;
+    }
+
+    .reference-container{
+        position: relative;
+     }
+
+     .reference-container__text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: var(--white-color);
+        width: 100%;
+        display: none;
+     }
+
+     .reference-container:hover .reference-container__text{
+        display: block;
+        cursor: pointer;
+        background-color: rgba(235, 108, 39, 0.85);
+     }
+
+
+
+}   

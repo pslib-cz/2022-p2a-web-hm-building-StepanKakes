@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans:wght@300;400;700&display=swap');
+html {
+    font-family: 'Open Sans', sans-serif;
+    --bg-color: #FFFFFF;
+    --main-color: #EB6C27;
+    --white-color:white;
+    --text-color:#3A3A3A;
+}
+
+.map-img{
+    width: 100%;
+    margin-top: 2em;
+}
+
+.contact-list{
+    margin-left: 2.5em;
+}
+
+.contact-list__map::before
+{
+    background-image: url(../media/icons/map.svg);
+}
+
+.contact-list__mail::before{
+    background-image: url(../media/icons/mail.svg);
+}
+
+.contact-list__mail, .contact-list__map, .contact-list__phone{
+    position: relative;
+}  
+
+.contact-list__phone::before, .contact-list__mail::before, .contact-list__map::before{
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    content: '';
+    width: 3em;
+    height: 3em;
+    background-color: var(--main-color);
+    background-size:50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    left:-3.25em;
+}
+
+.contact-list__phone::before{
+    background-image: url(../media/icons/phone.svg);
+}

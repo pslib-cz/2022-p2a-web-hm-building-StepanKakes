@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="sluzby.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/sluzby.css">
+    <link rel="stylesheet" href="./styles/kontakt.css">
 </head>
 <body>
         <nav class="navbar">
@@ -16,46 +17,45 @@
                 <p class="menu-text">MENU</p>
                 <label class="hamb" for="burger-menu"><span class="hamb-line"></span></label>
             <menu class="navbar__menu">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html">DOMŮ</a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">DOMŮ</a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html#services">SLUŽBY</a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">SLUŽBY</a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="./reference.html">REFERENCE</a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./reference.html">REFERENCE</a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="./onas.html">O NÁS</a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./onas.html">O NÁS</a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="./onas.html">KONTAKT</a>
-                    </li>       
+                <li class="nav-item">
+                    <a class="nav-link" href="./kontakt.html">KONTAKT</a>
+                </li>   
                 </menu>
             </nav>
 
 
 
-    <section class="info-section" id="novostavby">
+    <section class="contact-section content-wrapper">
         <h2>Kontaktujte nás</h2>
         <p>Zavolejte anebo nám napište... kvalitní komunikace je jeden z pilířů, na kterém stavíme.</p>
 
         <ul class="contact-list">
-            <li>+420 775 550 564</li>
-            <li>stavby@hm-building.cz</li>  
-            <li>Křižanská 12, Liberec XXII-Horní Suchá</li>
+            <li class="contact-list__phone">+420 775 550 564</li>
+            <li class="contact-list__mail">stavby@hm-building.cz</li>  
+            <li class="contact-list__map">Křižanská 12, Liberec XXII-Horní Suchá</li>
         </ul>
-
     </section>
-
+    <img class="map-img "src="./media/mapa.jpg" alt="mapa">
     <footer>
         <h2 >Plácneme si pro Váš projekt?</h2>
         <p>Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
         <a href="#" class="footer-btn btn--light">Nezávazně poptat</a>
     </footer>
 </body>
-</html> 
+</html>     

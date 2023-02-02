@@ -7,7 +7,7 @@ html {
 }
 
 
-.info-section{
+.content-wrapper{
     margin: 0  1.5em 4em;
 }
 
@@ -36,4 +36,18 @@ font-size: 14px;
 line-height: 19px;
 color: var(--main-color);
     margin-top: 2em;
+}
+
+@media only screen and (min-width:961px){
+    .content-wrapper{
+        margin: 0  12em 10em ;
+    } 
+
+    .info-section{
+        margin: 0 35em 10em 12em;
+    }
+
+    .info-section h2{
+        text-align: center;
+    }
 }
