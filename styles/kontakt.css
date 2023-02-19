@@ -16,6 +16,10 @@ html {
     margin-left: 2.5em;
 }
 
+.contact-list, .content-section__info{
+    margin: 0  2em 1em;
+}
+
 .contact-list__map::before
 {
     background-image: url(../media/icons/map.svg);
@@ -47,4 +51,75 @@ html {
 
 .contact-list__phone::before{
     background-image: url(../media/icons/phone.svg);
+}
+
+.submission__form{
+    padding: 0;
+    margin: 0;
+}
+
+/* FORM */
+.form__content{
+    margin:0 2em;
+}
+
+.heading{
+    font-size: 1.5em;
+}
+
+.form-text {
+    display:block;
+    padding: 1rem 0 .25rem;
+}       
+.input-form, textarea {
+    width: 100%;
+    border: 1px solid var(--main-color);
+    padding: 1em 0;
+}
+
+.message {
+    padding: 5em 0;
+}
+
+form .btn{
+    margin: auto;
+    display: block;
+    width: fit-content;
+}
+
+
+@media only screen and (min-width:961px){
+    .contact-section{
+        display: grid;
+        grid-template-areas: "info info"
+        "contact img";
+    }
+
+    .content-section__info{
+        grid-area: info;
+        text-align: center;
+    }
+
+    .contact-section img{
+        grid-area: img;
+        width: 50%;
+        justify-self: end;
+    }
+    .contact-list{
+        grid-area: contact;
+        align-self: center;
+        justify-self: end;
+    }
+    .contact-list, .content-section__info{
+        margin: 0 ;
+    }
+
+
+    .input-form, textarea {
+        width: 50%;
+    }
+
+    .form__content{
+        margin:0 15em 0 10em;
+    }
 }

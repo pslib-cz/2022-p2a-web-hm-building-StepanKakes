@@ -43,10 +43,6 @@ color: var(--main-color);
         margin: 0  12em 10em ;
     } 
 
-    .info-section{
-        margin: 0 35em 10em 12em;
-    }
-
     .info-section h2{
         text-align: center;
     }

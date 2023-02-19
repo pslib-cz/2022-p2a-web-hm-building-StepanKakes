@@ -10,37 +10,41 @@
     <link rel="stylesheet" href="./styles/normalize.css">
 </head>
 <body>
+    <header>
         <nav class="navbar">
                 <a href="./index.html" class="navbar__logo"><img src="./media/logo.png" alt="logo" width="130px"></a>
                 <input class="burger-menu" type="checkbox" id="burger-menu"/>
                 <p class="menu-text">MENU</p>
                 <label class="hamb" for="burger-menu"><span class="hamb-line"></span></label>
             <menu class="navbar__menu">
-                <li class="nav-item">
-                    <a class="nav-link" href="./index.html">DOMŮ</a>
-                </li>
+                <div class="navbar__container">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">DOMŮ</a>
+                    </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#services">SLUŽBY</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html#services">SLUŽBY</a>
+                    </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="./reference.html">REFERENCE</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./reference.html">REFERENCE</a>
+                    </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="./onas.html">O NÁS</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./onas.html">O NÁS</a>
+                    </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="./kontakt.html">KONTAKT</a>
-                </li>     
+                    <li class="nav-item">
+                        <a class="nav-link" href="./kontakt.html">KONTAKT</a>
+                    </li>
+                </div>
                 </menu>
             </nav>
+    </header>
 
 
     <section class="content-wrapper" id="prum-stavby">
-        <h2>Průmyslové stavby</h2>
+        <h1>Průmyslové stavby</h1>
         <p>Realizujeme <strong>průmyslové objekty ocelové konstrukce, lehké ocelové (stanového typu)</strong>, z prefabrikovaných dílců atd. Vzhledem k tomu, že vlastníme dostatek vlastní mechanizace, stáváme se nezávislými na ostatních subdodávkách a tím <strong>se dostáváme na přijatelné ceny.</strong></p>
 
         <ul>
@@ -59,7 +63,7 @@
     <footer>
         <h2 >Plácneme si pro Váš projekt?</h2>
         <p>Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
-        <a href="#" class="footer-btn">Nezávazně poptat</a>
+        <a href="#" class="footer-btn btn--light">Nezávazně poptat</a>
     </footer>
 </body>
 </html> 
